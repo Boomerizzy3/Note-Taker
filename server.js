@@ -9,16 +9,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', api);
 
-app.use(express.static('public'));
+app.use(express.static('docs'));
 
 app.get('/', (req, res) => res.send('Navigate to /send or /routes'));
 
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/notes.html'))
+  res.sendFile(path.join(__dirname, 'docs/notes.html'))
 );
 
 app.get('/paths', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/paths.html'))
+  res.sendFile(path.join(__dirname, 'docs/paths.html'))
 );
 
 app.listen(PORT, () =>
