@@ -3,6 +3,7 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+let startButton = document.getElementById("start-button");
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
