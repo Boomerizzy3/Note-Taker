@@ -7,7 +7,7 @@ Application that can be used to write and save notes
 
 ## Deployed link
 
-
+https://github.com/Boomerizzy3/Note-Taker 
 
 ## Credits
 
